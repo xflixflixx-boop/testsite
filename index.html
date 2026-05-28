@@ -1,28 +1,64 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Site</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArtMusic</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Bienvenue 👋</h1>
-    <p>Had site simple w جاهز للتجربة.</p>
-  </header>
 
-  <main>
-    <section class="card">
-      <h2>À propos</h2>
-      <p>
-        T9dar تبدل هاد النص بأي محتوى بغيتي.
-      </p>
-      <button onclick="showMessage()">Clique ici</button>
-    </section>
-  </main>
+<header class="hero">
+<nav>
+<h1>🎵 ArtMusic</h1>
+<ul>
+<li><a href="#player">Player</a></li>
+<li><a href="#playlist">Playlist</a></li>
+<li><a href="#radio">Radio</a></li>
+</ul>
+</nav>
 
-  <script src="script.js"></script>
+<div class="hero-content">
+<h2>Modern Music Experience</h2>
+<p>Music • Art • Vibes</p>
+<a href="#player" class="btn">Start Listening</a>
+</div>
+</header>
+
+<section id="player" class="section">
+<h2>Music Player</h2>
+<div class="card">
+<img src="https://picsum.photos/400/250" alt="cover">
+<h3>Sample Track</h3>
+<audio controls>
+<source src="" type="audio/mpeg">
+</audio>
+</div>
+</section>
+
+<section id="playlist" class="section">
+<h2>Playlist</h2>
+<div class="playlist">
+<div class="song">🎶 Chill Vibes</div>
+<div class="song">🔥 Night Beat</div>
+<div class="song">🌊 Ocean Dreams</div>
+<div class="song">🎧 Synth Wave</div>
+</div>
+</section>
+
+<section id="radio" class="section">
+<h2>Live Radio</h2>
+<div class="card">
+<p>24/7 Streaming Experience</p>
+<button onclick="showRadio()">Play Radio</button>
+</div>
+</section>
+
+<footer>
+<p>© 2026 ArtMusic</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
